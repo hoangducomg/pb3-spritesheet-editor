@@ -59,6 +59,8 @@ var decoration = pb2Decoration.CreateDecoration({
 • Saved frames are PNG, so transparency is kept. The sprite sheet is WebP.
 • If WebP saving fails, run pip install -U pillow to get a build with WebP support.
 • Animation ranges must stay within the sheet. The app reports an error if first + count goes past the last cell.
+• Sometimes the game decided to resize your output sprite sheet, which cause inaccuracy between frame transitioning. Keep your sprite sheet image as close as 1:1 ratio (maximum 1500x1500) as possible.
+• If the output are not working, check, by default, scaleXYZ are set to 0.
 
 ## Disclaimer
 • The program are written by Claude AI. As an AI generated program. The program are free to use, as a free, open source project.
