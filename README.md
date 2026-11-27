@@ -13,25 +13,6 @@ Decoration properties: X, Y, Z, scaleX/Y/Z, offsets, frame offsets, starting fra
 • Packed sprite sheet saved as WebP (lossless or with a quality slider), with a configurable number of columns.
 Generated pb2Decoration code, which you can copy or save as a .js file.
 • Save a single selected frame, or all frames to a folder, as PNG.
-
-## Requirements
-• Windows, macOS, or Linux
-• Python 3.9 or newer
-• Pillow
-• OpenCV (only needed for video input)
-
-## Installation
-• Step 1: Double click on `setup.bat` to install. It should be in the same folder as `PB3 Animate Frames Editor.py`
-The script checks for Python, creates a .venv folder, installs Pillow and OpenCV, and starts the app. Delete .venv to reset the environment.
-
-## How to use
-• Load frames, pick your input files.
-• Process, set rescale, crop, resize, optimize if needed.
-• Edit the sequence if needed.
-• Set decoration properties, later can be change in game instead if you know how to read .js code.
-• Build and export | save sprite sheet as .webp | save or copy the .js code and paste in code snippet
-
-## Output
 • Sprite sheet: Frames are laid out row by row, left to right, top to bottom. Each cell uses the largest frame's width and height, and smaller frames are centered. Hold values repeat a frame in the sheet. The Sheet columns setting controls how many cells appear per row; 0 puts everything in one row.
 • Generated .js code: The output looks like this:
 
@@ -53,6 +34,23 @@ var decoration = pb2Decoration.CreateDecoration({
 	]
 });
 ``
+
+## Requirements
+• Windows, macOS, or Linux
+• Python 3.9 or newer
+• Pillow
+• OpenCV (only needed for video input)
+
+## Installation
+• Step 1: Double click on `setup.bat` to install. It should be in the same folder as `PB3 Animate Frames Editor.py`
+The script checks for Python, creates a .venv folder, installs Pillow and OpenCV, and starts the app. Delete .venv to reset the environment.
+
+## How to use
+• Load frames, pick your input files.
+• Process, set rescale, crop, resize, optimize if needed.
+• Edit the sequence if needed.
+• Set decoration properties, later can be change in game instead if you know how to read .js code.
+• Build and export | save sprite sheet as .webp | save or copy the .js code and paste in code snippet
 
 ## Notes
 • scaleX, scaleY, and scaleZ default to 0. If your engine treats 0 as "no scale", set them to 1.
